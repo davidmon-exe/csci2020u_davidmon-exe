@@ -5,4 +5,8 @@ class hello {
         system.out.prinln("Helo World");
     }
 }
+<<<<<<< HEAD
 //This version is for Beta Branch
+=======
+//This version is for the main branch
+>>>>>>> main

@@ -1,0 +1,55 @@
+commit 8615554aa6f123f671d76b74262597c23bf8bd57 (HEAD -> main, origin/main, beta)
+Author: davidmon-exe <david.mongeon@ontariotechu.net>
+Date:   Tue Jan 19 13:49:18 2021 -0500
+
+    Merging beta and main branches
+
+commit 10f2c7742955369af78407f614e736c813099335
+Merge: f40b6e8 24b7706
+Author: davidmon-exe <david.mongeon@ontariotechu.net>
+Date:   Tue Jan 19 13:47:38 2021 -0500
+
+    Merge branch 'main' into beta
+
+commit 24b77068b57ae82b835c3d5f64f64334539d840c
+Author: davidmon-exe <david.mongeon@ontariotechu.net>
+Date:   Tue Jan 19 13:12:37 2021 -0500
+
+    Edited the gitignore
+
+commit f40b6e8882a67ee004af4feee3dc66577e712c63
+Merge: e374eba 6c2e690
+Author: davidmon-exe <david.mongeon@ontariotechu.net>
+Date:   Tue Jan 19 13:04:37 2021 -0500
+
+    Merging
+
+commit 6c2e690241656e229f8ac9fd1ef5c99d1dc2313c
+Author: davidmon-exe <david.mongeon@ontariotechu.net>
+Date:   Tue Jan 19 13:01:41 2021 -0500
+
+    Made some changes on main branch
+
+commit e374ebaefdc1ca0a031f854fdf3b40803eb22cc9
+Author: davidmon-exe <david.mongeon@ontariotechu.net>
+Date:   Tue Jan 19 12:59:21 2021 -0500
+
+    Made some changes in beta branch
+
+commit b80fcdf791b1edc18f0d10c3d8a755eb38e4ad2b
+Author: davidmon-exe <david.mongeon@ontariotechu.net>
+Date:   Tue Jan 19 12:55:01 2021 -0500
+
+    Testing git diff
+
+commit 6e85c83157f531fe6ad2b0b1ac0e43daf40abac7
+Author: davidmon-exe <david.mongeon@ontariotechu.net>
+Date:   Tue Jan 19 12:43:33 2021 -0500
+
+    Doing this again cause I accidentally pushed to master not main
+
+commit 19cc43d37dc147352d88a2d80000473fea045340
+Author: David Mongeon <71033027+davidmon-exe@users.noreply.github.com>
+Date:   Tue Jan 19 12:23:33 2021 -0500
+
+    Initial commit

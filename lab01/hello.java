@@ -2,7 +2,7 @@
 
 class hello {
     public static void Main(String[] args) {
-        system.out.prinln("Helo World");
+        System.out.println("Hello World");
     }
 }
 //This version is for Beta Branch

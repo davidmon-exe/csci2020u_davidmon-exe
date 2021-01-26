@@ -1,2 +1,0 @@
-SimpleTest.java
- main.java.SimpleTest

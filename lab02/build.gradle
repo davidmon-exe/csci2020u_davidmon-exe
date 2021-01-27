@@ -1,8 +1,7 @@
 plugins {
-    id 'java'
+	id 'java'
     id 'application'
 }
-
 application {
-    mainClassName = 'SimpleTest'
+    mainClassName = 'main/java/SimpleTest'
 }

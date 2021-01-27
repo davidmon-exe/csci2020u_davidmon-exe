@@ -1,2 +1,2 @@
 SimpleTest.java
- main.java.SimpleTest
+ SimpleTest

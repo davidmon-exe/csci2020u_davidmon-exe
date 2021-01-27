@@ -3,5 +3,11 @@ plugins {
     id 'application'
 }
 application {
-    mainClassName = 'main/java/SimpleTest'
+    mainClassName = 'src/main/java/SimpleTest'
+}
+repositories{
+    mavenCentral()
+}
+dependencies{
+    implementation 'org.apache.commons:commons-csv:1.8'
 }

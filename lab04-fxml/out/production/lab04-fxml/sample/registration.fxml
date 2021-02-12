@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="baseline_left" hgap="20" vgap="20">
+
+    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField id="txUserName" fx:id="txUserName" promptText="Please give a Username" prefWidth="300"
+               GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Text fx:id="userErr" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <PasswordField id="passwordField" fx:id="passwordField" promptText="Password must be minimum of 8 characters"
+            GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="300"/>
+    <Text fx:id="passErr" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+    <Label text="Full Name:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField id="txFullName" fx:id="txFullName" promptText="Please give first and last name"
+            GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Text fx:id="nameErr" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+
+    <Label text="E-mail:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField id="txEmail" fx:id="txEmail" promptText="Email must be in format 'name@emailaddress.com'"
+               GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Text fx:id="emailErr" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+
+
+    <Label text="Phone #:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <TextField id="txPhoneNum" fx:id="txPhoneNum" promptText="Phone# must be valid"
+            GridPane.columnIndex="1" GridPane.rowIndex="5" maxWidth="200"/>
+    <Text fx:id="phoneErr" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+
+    <Label text="Date of Birth:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <DatePicker id="datePicker" fx:id="datePicker" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <Text fx:id="dateErr" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+
+
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="0" GridPane.rowIndex="7">
+          <Button id="regBtn" text="Register" onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@mystyle.css"/>
+    </stylesheets>
+
+
+</GridPane>

@@ -1,0 +1,87 @@
+<?import javafx.collections.*?>
+<?import javafx.geometry.Insets?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<GridPane alignment="top_center" hgap="10.0" vgap="10.0" prefHeight="550" prefWidth="900" fx:controller="marksList.Controller"
+          xmlns:fx="http://javafx.com/fxml">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right ="10.0" top="10.0"/>
+    </padding>
+
+
+    <TableView fx:id="tableView" GridPane.columnIndex="0"
+               GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="idCol" text="SID" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="studentId" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Assignment" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="assignmentMark" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Midterm" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="midtermMark" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Final Exam" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="examMark" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Final Mark" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="finalMark" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Letter Grade" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="letterGrade" />
+                </cellValueFactory>
+            </TableColumn>
+
+        </columns>
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+
+            </FXCollections>
+        </items>
+        <sortOrder>
+            <fx:reference source="idCol"/>
+        </sortOrder>
+    </TableView>
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="2">
+
+        <Label text="SID: " prefWidth="100"/>
+        <TextField fx:id="studentIdField" promptText="Student ID" prefWidth="150"/>
+
+        <Label text="Assignments: " prefWidth="100"/>
+        <TextField fx:id="assignmentMarkField" promptText="Assignments/100" prefWidth="150"/>
+    </HBox>
+    <HBox spacing="10"  GridPane.columnIndex="0" GridPane.rowIndex="3">
+
+        <Label text="Midterm(s): " prefWidth="100"/>
+        <TextField fx:id="midtermMarkField" promptText="Midterm(s)/100" prefWidth="150"/>
+
+        <Label text="Exam: " prefWidth="100"/>
+        <TextField fx:id="examMarkField" promptText="Exam/100" prefWidth="150"/>
+
+    </HBox>
+    <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Button text="Add" onAction="#addPerson"/>
+    </HBox>
+</GridPane>

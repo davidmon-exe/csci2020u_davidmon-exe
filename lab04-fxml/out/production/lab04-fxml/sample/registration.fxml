@@ -4,48 +4,50 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 <?import java.net.URL?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="baseline_left" hgap="20" vgap="20">
+<AnchorPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml"  prefHeight="350" prefWidth="420">
 
-    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label text="Username:" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="25.0"/>
     <TextField id="txUserName" fx:id="txUserName" promptText="Please give a Username" prefWidth="300"
-               GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-    <Text fx:id="userErr" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+           AnchorPane.topAnchor="45.0" AnchorPane.leftAnchor="125.0"/>
+    <Text fx:id="userErr" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="450.0"/>
 
-    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Label text="Password:" AnchorPane.topAnchor="100.0" AnchorPane.leftAnchor="25.0"/>
     <PasswordField id="passwordField" fx:id="passwordField" promptText="Password must be minimum of 8 characters"
-            GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="300"/>
-    <Text fx:id="passErr" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            AnchorPane.topAnchor="95.0" AnchorPane.leftAnchor="125.0" prefWidth="300"/>
+    <Text fx:id="passErr" AnchorPane.topAnchor="100.0" AnchorPane.leftAnchor="450.0"/>
 
-    <Label text="Full Name:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Label text="Full Name:" AnchorPane.topAnchor="150.0" AnchorPane.leftAnchor="25.0"/>
     <TextField id="txFullName" fx:id="txFullName" promptText="Please give first and last name"
-            GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-    <Text fx:id="nameErr" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+            AnchorPane.topAnchor="145.0" AnchorPane.leftAnchor="125.0" prefWidth="300"/>
+    <Text fx:id="nameErr" AnchorPane.topAnchor="150.0" AnchorPane.leftAnchor="450.0"/>
 
-    <Label text="E-mail:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Label text="E-mail:" AnchorPane.topAnchor="200.0" AnchorPane.leftAnchor="25.0"/>
     <TextField id="txEmail" fx:id="txEmail" promptText="Email must be in format 'name@emailaddress.com'"
-               GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-    <Text fx:id="emailErr" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+           AnchorPane.topAnchor="195.0" AnchorPane.leftAnchor="125.0" prefWidth="300"/>
+    <Text fx:id="emailErr" AnchorPane.topAnchor="200.0" AnchorPane.leftAnchor="450.0"/>
 
 
-    <Label text="Phone #:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Label text="Phone #:" AnchorPane.topAnchor="250.0" AnchorPane.leftAnchor="25.0"/>
     <TextField id="txPhoneNum" fx:id="txPhoneNum" promptText="Phone# must be valid"
-            GridPane.columnIndex="1" GridPane.rowIndex="5" maxWidth="200"/>
-    <Text fx:id="phoneErr" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+            AnchorPane.topAnchor="245.0" AnchorPane.leftAnchor="125.0" maxWidth="200"/>
+    <Text fx:id="phoneErr" AnchorPane.topAnchor="250.0" AnchorPane.leftAnchor="450.0"/>
 
-    <Label text="Date of Birth:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
-    <DatePicker id="datePicker" fx:id="datePicker" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
-    <Text fx:id="dateErr" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+    <Label text="Date of Birth:" AnchorPane.topAnchor="300.0" AnchorPane.leftAnchor="25.0"/>
+    <DatePicker id="datePicker" fx:id="datePicker"
+            AnchorPane.topAnchor="295.0" AnchorPane.leftAnchor="125.0"/>
+    <Text fx:id="dateErr" AnchorPane.topAnchor="300.0" AnchorPane.leftAnchor="450.0"/>
 
 
 
-    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="0" GridPane.rowIndex="7">
+    <HBox spacing="10" alignment="bottom_right"
+          AnchorPane.topAnchor="350.0" AnchorPane.leftAnchor="125.0">
           <Button id="regBtn" text="Register" onAction="#handleSubmitButtonAction"/>
     </HBox>
 
     <stylesheets>
-        <URL value="@mystyle.css"/>
+        <URL value="@style.css"/>
     </stylesheets>
 
 
-</GridPane>
+</AnchorPane>

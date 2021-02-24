@@ -5,7 +5,7 @@
 <?import javafx.scene.text.*?>
 <?import java.net.URL?>
 <AnchorPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml"  prefHeight="350" prefWidth="420">
+    xmlns:fx="http://javafx.com/fxml"  prefHeight="350" prefWidth="420">
 
     <Label text="Username:" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="25.0"/>
     <TextField id="txUserName" fx:id="txUserName" promptText="Please give a Username" prefWidth="300"
@@ -27,7 +27,6 @@
            AnchorPane.topAnchor="195.0" AnchorPane.leftAnchor="125.0" prefWidth="300"/>
     <Text fx:id="emailErr" AnchorPane.topAnchor="200.0" AnchorPane.leftAnchor="450.0"/>
 
-
     <Label text="Phone #:" AnchorPane.topAnchor="250.0" AnchorPane.leftAnchor="25.0"/>
     <TextField id="txPhoneNum" fx:id="txPhoneNum" promptText="Phone# must be valid"
             AnchorPane.topAnchor="245.0" AnchorPane.leftAnchor="125.0" maxWidth="200"/>
@@ -38,8 +37,6 @@
             AnchorPane.topAnchor="295.0" AnchorPane.leftAnchor="125.0"/>
     <Text fx:id="dateErr" AnchorPane.topAnchor="300.0" AnchorPane.leftAnchor="450.0"/>
 
-
-
     <HBox spacing="10" alignment="bottom_right"
           AnchorPane.topAnchor="350.0" AnchorPane.leftAnchor="125.0">
           <Button id="regBtn" text="Register" onAction="#handleSubmitButtonAction"/>
@@ -48,6 +45,4 @@
     <stylesheets>
         <URL value="@style.css"/>
     </stylesheets>
-
-
 </AnchorPane>

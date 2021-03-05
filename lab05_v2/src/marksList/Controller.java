@@ -1,17 +1,19 @@
 package marksList;
 
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class Controller {
+    @FXML private TableColumn idCol;
     @FXML private TableView<StudentRecord> tableView;
     @FXML private TextField studentIdField;
     @FXML private TextField assignmentMarkField;
     @FXML private TextField midtermMarkField;
     @FXML private TextField examMarkField;
+    private ObservableList<StudentRecord> data;
     @FXML
     public void initialize(){
         System.out.println("App is running...");
@@ -19,8 +21,8 @@ public class Controller {
     }
 
     @FXML
-    public void addPerson(ActionEvent actionEvent) {
-        ObservableList<StudentRecord> data = tableView.getItems();
+    public void addStudentRecord() {
+        data = tableView.getItems();
         try {
             data.add(new StudentRecord(studentIdField.getText(),
                     Double.parseDouble(assignmentMarkField.getText()),

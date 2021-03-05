@@ -57,7 +57,6 @@
         </columns>
         <items>
             <FXCollections fx:factory="observableArrayList">
-
             </FXCollections>
         </items>
         <sortOrder>
@@ -82,6 +81,6 @@
 
     </HBox>
     <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
-        <Button text="Add" onAction="#addPerson"/>
+        <Button text="Add" onAction="#addStudentRecord"/>
     </HBox>
 </GridPane>

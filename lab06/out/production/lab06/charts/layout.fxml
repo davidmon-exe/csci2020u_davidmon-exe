@@ -1,0 +1,8 @@
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:controller="charts.Controller"
+            xmlns:fx="http://javafx.com/fxml"  prefHeight="500" prefWidth="1000">
+    <Canvas id="barCanvas" fx:id="barCanvas" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" height="500" width="400"/>
+    <Canvas id="pieCanvas" fx:id="pieCanvas" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="450" height="400" width ="400"/>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fileIO.Controller">
+
+    <Canvas fx:id="chartCanvas" height="300.0" layoutX="250.0" layoutY="50.0" width="400.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="50.0" />
+
+    <Canvas fx:id="legendCanvas" height="300.0" layoutX="50.0" layoutY="50.0" width="200.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+
+
+
+</AnchorPane>

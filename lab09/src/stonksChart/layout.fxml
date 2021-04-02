@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1000" prefWidth="1000" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stonksChart.Controller">
+    <Canvas fx:id="canvasChart" height="850.0" width="1000.0" />
+    <Canvas fx:id="canvasLegend" height="150.0" layoutY="850.0" width="1000.0" />
+</AnchorPane>
